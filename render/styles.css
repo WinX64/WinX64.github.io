@@ -1,0 +1,56 @@
+body.light {
+    background-image: url("/images/light-background.png");
+}
+
+body.dark {
+    background-image: url("/images/dark-background.png");
+}
+
+.slow {
+    transition: 0.25s;
+}
+
+
+div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vmin;
+    width: 100%;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+h1, p {
+    text-align: center;
+    font-family: consolas;
+    user-select: none;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+    
+}
+
+.enlarge {
+    border-color: transparent;
+}
+
+.enlarge:hover {
+    transform: scale(1.05);
+    background-color: #00000014;
+    border-color: black;
+}
+
+.smaller {
+    font-size: 3.5vmin;
+}
+
+.light, .light p, .light a {
+    color: black;
+}
+
+.dark, .dark p, .dark a {
+    color: white;
+}
